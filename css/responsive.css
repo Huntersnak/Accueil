@@ -1,0 +1,60 @@
+/*********************************************************************************************************
+                                          Pour les écrans >= 480px
+ ********************************************************************************************************/
+@media only screen and (min-width: 480px) {
+    body
+}
+
+/*********************************************************************************************************
+                                                >= 660 PX
+ ********************************************************************************************************/
+@media only screen and (min-width: 660px) {
+
+}
+
+/*********************************************************************************************************
+                                                >= 910 PX
+ ********************************************************************************************************/
+@media only screen and (min-width: 910px) {
+    figure.imgfond {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: 0;
+    }
+
+    body {
+
+    }
+
+    html body header,
+    html body main,
+    html body footer {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    html body header {
+        background-color: transparent;
+        background-position: top;
+    }
+
+    html body div.wrapper main {
+        background-color: #1A1B1F;
+        margin-top: 100px;
+    }
+
+    html body header nav.grandmenu {
+        display: inline;
+    }
+
+    html body header nav.grandmenu ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    html body header div.menu {
+        display: none;
+    }
+
+}
