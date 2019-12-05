@@ -18,12 +18,11 @@ html {
 
 body {
     margin: 0;
-}
-
-img {
-    max-width: 2em;
-    width: auto;
-    height: auto;
+    background-color: #090909;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 h1,
@@ -38,6 +37,8 @@ h1 {
 
 h2 {
     font-size: 2em;
+    margin-bottom: 5px;
+    margin-top: 15px ;
 }
 
 a {
@@ -46,15 +47,12 @@ a {
 }
 
 a:hover {
+    color: #80e5ed;
     text-decoration: underline;
 }
 
 .wrapper {
-    background-image: url("../images/avengers.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    margin: 0 5%;
 }
 
 
@@ -68,7 +66,7 @@ header {
 }
 
 header h1 {
-    margin: 0;;
+    margin: 0;
     line-height: 0.8;
 }
 
@@ -90,20 +88,10 @@ header nav ul li {
     display: inline-block;
 }
 
-header nav ul li a,
-header nav ul li a:visited {
+header nav ul li a {
     display: inline-block;
     padding: 0 20px;
     font-weight: 700;
-}
-
-header nav li a:hover,
-header nav li a.selected {
-    color:  #80e5ed;
-}
-
-header nav li a[href="index.html"] {
-    display: none;
 }
 
 
@@ -124,42 +112,78 @@ footer {
 /*********************************************************************************************************
                                               PAGE ACCUEIL
  ********************************************************************************************************/
+div.wrapper main.page-acceuil section.colonnes,
+div.wrapper main.page-acceuil section.colonnes {
+    padding: 0 20px;
+}
 
+div.wrapper main.page-accueil section.colonnes section.col2 {
+    text-align: right;
+}
 
-main.page-accueil  ul,
-main.page-accueil  ul {
+div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec,
+div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso {
     list-style: none;
     padding: 0;
     margin: 0 0 0 10px; 
 }
 
-main.page-accueil section.col1 ul li,
-main.page-accueil section.col2 ul li {
+div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li,
+div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso li {
     margin-bottom: .5em;
 }
 
-main.page-accueil section.col1 ul li a,
-main.page-accueil section.col2 ul li a {
+div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li a,
+div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso li a {
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 0 2px;
+    background-position: 0 5px;
     padding-left: 25px;
 }
 
-main.page-acceuil section.colonnes section.col1 ul li.accueil a[href*="divtec"],
-main.page-acceuil section.colonnes section.col1 ul li.informatique a[href*="divtec"] {
+div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li.sharepoint a[href*="divtec"] {
     background-image: url("../images/logo-sharepoint.png");
-    color: blue;
 }
 
-main.page-accueil section.colonnes section.col1 ul li.planning a[href*="planning"] {
+div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li.planning a[href*="planning"] {
     background-image: url("../images/logo-hyperplanning.png");
 }
 
-main.page-contact ul.contact-info li a[href*="twitter"] {
-    background-image: url("../images/twitter.png");
+div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso li.netflix a[href*="netflix"] {
+    background-image: url("../images/logo-netflix.png");
 }
 
-main.page-contact ul.contact-info li a[href*="facebook"] {
-    background-image: url("../images/facebook.png");
+div.wrapper main.page-accueil section.recherche form a img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 15%;
+}
+
+div.wrapper main.page-accueil section.recherche form div.arrondi {
+    display: block;
+    width: 580px;
+    height: 44px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    border: #161616;
+    background-color: black;
+
+}
+
+div.wrapper main.page-accueil section.recherche form div.arrondi input.bouton {
+    width: 22px;
+    background-color: transparent;
+}
+
+
+div.wrapper main.page-accueil section.recherche form div.arrondi input.barre {
+    width: 500px;
+    height: 34px;
+    margin: 5px 0;
+    padding: 0 10px;
+    border: none;
+    background-color: black;
+    color: white;
 }
