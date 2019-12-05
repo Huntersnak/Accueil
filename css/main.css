@@ -1,0 +1,165 @@
+/*********************************************************************************************************
+                                                Code GENERAL
+ ********************************************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Changa', sans-serif;
+    front-weight: 400;
+    font-size: 1em;
+    line-height: 1.4;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 2em;
+    width: auto;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: 'Changa One', cursive;
+    front-weight: 400;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    background-image: url("../images/avengers.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*********************************************************************************************************
+                                                EN-TÊTE
+ ********************************************************************************************************/
+header {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;;
+    line-height: 0.8;
+}
+
+header hr {
+    border-top: 5px solid white;
+    width: 30%;
+    margin: 10px 35% 5px 35%;
+    padding: 0;
+    vertical-align: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a,
+header nav ul li a:visited {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+header nav li a:hover,
+header nav li a.selected {
+    color:  #80e5ed;
+}
+
+header nav li a[href="index.html"] {
+    display: none;
+}
+
+
+/*********************************************************************************************************
+                                              PIED DE PAGE
+ ********************************************************************************************************/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/*********************************************************************************************************
+                                              PAGE ACCUEIL
+ ********************************************************************************************************/
+
+
+main.page-accueil  ul,
+main.page-accueil  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 10px; 
+}
+
+main.page-accueil section.col1 ul li,
+main.page-accueil section.col2 ul li {
+    margin-bottom: .5em;
+}
+
+main.page-accueil section.col1 ul li a,
+main.page-accueil section.col2 ul li a {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 25px;
+}
+
+main.page-acceuil section.colonnes section.col1 ul li.accueil a[href*="divtec"],
+main.page-acceuil section.colonnes section.col1 ul li.informatique a[href*="divtec"] {
+    background-image: url("../images/logo-sharepoint.png");
+    color: blue;
+}
+
+main.page-accueil section.colonnes section.col1 ul li.planning a[href*="planning"] {
+    background-image: url("../images/logo-hyperplanning.png");
+}
+
+main.page-contact ul.contact-info li a[href*="twitter"] {
+    background-image: url("../images/twitter.png");
+}
+
+main.page-contact ul.contact-info li a[href*="facebook"] {
+    background-image: url("../images/facebook.png");
+}
