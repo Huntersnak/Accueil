@@ -18,7 +18,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #090909;
+    background-color: #171717;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -36,9 +36,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 5px;
-    margin-top: 15px ;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3.5em;
 }
 
 a {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .wrapper {
-    margin: 0 5%;
+    margin: 1% 5%;
 }
 
 
@@ -61,8 +61,8 @@ a:hover {
  ********************************************************************************************************/
 header {
     padding: 20px;
-    background-color: black;
     text-align: center;
+    background-color: black;
 }
 
 header h1 {
@@ -112,78 +112,56 @@ footer {
 /*********************************************************************************************************
                                               PAGE ACCUEIL
  ********************************************************************************************************/
-div.wrapper main.page-acceuil section.colonnes,
-div.wrapper main.page-acceuil section.colonnes {
-    padding: 0 20px;
-}
-
-div.wrapper main.page-accueil section.colonnes section.col2 {
-    text-align: right;
-}
-
-div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec,
-div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0 10px; 
-}
-
-div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li,
-div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso li {
-    margin-bottom: .5em;
-}
-
-div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li a,
-div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso li a {
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 0 5px;
-    padding-left: 25px;
-}
-
-div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li.sharepoint a[href*="divtec"] {
-    background-image: url("../images/logo-sharepoint.png");
-}
-
-div.wrapper main.page-accueil section.colonnes section.col1 ul.lien-divtec li.planning a[href*="planning"] {
-    background-image: url("../images/logo-hyperplanning.png");
-}
-
-div.wrapper main.page-accueil section.colonnes section.col2 ul.lien-perso li.netflix a[href*="netflix"] {
-    background-image: url("../images/logo-netflix.png");
-}
-
-div.wrapper main.page-accueil section.recherche form a img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    width: 15%;
-}
-
-div.wrapper main.page-accueil section.recherche form div.arrondi {
-    display: block;
-    width: 580px;
-    height: 44px;
-    border-radius: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    border: #161616;
-    background-color: black;
-
-}
-
-div.wrapper main.page-accueil section.recherche form div.arrondi input.bouton {
-    width: 22px;
+main.page-accueil form,
+main.page-accueil div {
+    width: 60%;
+    margin: 1% auto;
+    border: 3px solid #92959c;
+    border-radius: 15px;
     background-color: transparent;
 }
 
-
-div.wrapper main.page-accueil section.recherche form div.arrondi input.barre {
-    width: 500px;
-    height: 34px;
-    margin: 5px 0;
-    padding: 0 10px;
+main.page-accueil form input {
+    padding: 12px 10px 12px 42px;
     border: none;
-    background-color: black;
-    color: white;
+    color: #92959c;
+    background-color: transparent;
+    width: 100%;
+    font-size: 110%;
+    background-image: url("../images/recherche.png");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}
+
+main.page-accueil div.divtec {
+    margin-top: 5%;
+}
+
+main.page-accueil div.divtec a,
+main.page-accueil div.perso a {
+    display: inline-block;
+    margin: .5em;
+}
+
+main.page-accueil div.divtec a.first,
+main.page-accueil div.perso a.first {
+    margin-left: 1em;
+}
+
+main.page-accueil div.divtec a img,
+main.page-accueil div.perso a img {
+    width: 60px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 100%;
+}
+
+main.page-accueil div.time {
+    margin-top: 5%;
+    padding: 12px 0;
+    background-color: transparent;
+}
+main.page-accueil div.time iframe.time {
+    width: 100%;
 }

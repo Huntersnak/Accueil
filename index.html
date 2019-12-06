@@ -8,84 +8,65 @@
     <meta name="description" content="Page D'Accueil"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="images/fivicon.ico" href="images/favicon.ico" sizes="16x16">
+    <link rel="icon" type="images/fivicon.ico" href="images/favicon.jpg" sizes="16x16">
 </head>
 
 <body>
+    <header>
+        <h1>Acceuil</h1>
+        <hr>
+        <!--nav>
+            <ul>
+                <li>
+                    <a href="">Atelier</a>
+                </li>
+                <li>
+                    <a href="">EPT</a>
+                </li>
+                <li>
+                    <a href="">Modules</a>
+                </li>
+            </ul>
+        </nav-->
+    </header>
 
-<header>
-    <h1>Acceuil</h1>
-    <hr>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="">Atelier</a>
-            </li>
-            <li>
-                <a href="">EPT</a>
-            </li>
-            <li>
-                <a href="">Modules</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<div class="wrapper">
-    <main class="page-accueil">
-        <section class="colonnes">
-            <section class="col1">
-                <h2>Divtec</h2>
-                <ul class="lien-divtec">
-                    <li class="sharepoint">
-                        <a href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">EMT - Accueil</a>
-                    </li>
-                    <li class="sharepoint">
-                        <a href="https://divtec.sharepoint.com/aif/SitePages/Accueil.aspx">EMT - Informatique</a>
-                    </li>
-                    <li class="planning">
-                        <a href="https://planning.divtec.ch/ept-mpt/etudiant?service=https://planning.divtec.ch/ept-mpt/&identifiant=gngYsNgpbHKX55Vx">EMT - Planning</a>
-                    </li>
-                </ul>
-            </section><section class="col2">
-                <h2>Perso</h2>  
-                <ul class="lien-perso">
-                    <li class="netflix">
-                        <a href="https://www.netflix.com/browse">Netflix</a>
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </p>
-        <section class="recherche">
-            <form method=GET action="http://www.google.com/custom"> 
-                <a href="http://www.google.com/search"> <img src="images\logo-google.png" alt="Google"> </a> 
-                
-                <div class="arrondi">
-                    <input class="bouton" type=image name="sa" src="images\recherche.png">
-                    <input class="barre" type=text name="q" size=80 maxlength=255 value="">
-                    <input type=hidden name=cof value="Rechercher sur le Web">
-                    <input type=hidden name=domains value="https://huntersnak.github.io/Accueil/"> 
-                </div>
+    <div class="wrapper">
+        <main class="page-accueil">
+            <h2>Bienvenue Gaëtan</h2>
+            <form method="get" action="https://google.com/search" _lpcheked="1">
+                <label>
+                    <input type="text" name="q" placeholder="Rechercher sur Google" autofocus="" autocomplete="off">
+                </label>
             </form>
-        </section>
-    </main>
+            <div class="divtec">
+                <a class="first" href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">
+                    <img src="images/logo-sharepoint.png" alt="Acceuil Sharepoint">
+                </a>
+                <a href="https://divtec.sharepoint.com/aif/SitePages/Accueil.aspx">
+                    <img src="images/logo-sharepoint-aif.png" alt="Acceuil Sharepoint Informatique">
+                </a>
+                <a href="https://planning.divtec.ch/ept-mpt/etudiant?service=https://planning.divtec.ch/ept-mpt/&identifiant=gngYsNgpbHKX55Vx">
+                    <img src="images/logo-hyperplanning.png" alt="Hyperplanning">
+                </a>
+            </div>
+            <div class="perso">
+                <a class="first" href="https://www.youtube.com/?hl=fr&gl=CH">
+                    <img src="images/logo-youtube.png" alt="Youtube">
+                </a>
+                <a href="https://www.netflix.com/browse">
+                    <img src="images/logo-netflix.png" alt="Netflix">
+                </a>
+            </div>
+            <div class="time">
+                <iframe class="time" src="https://freesecure.timeanddate.com/clock/i72138cw/n2068/tlch2/fs20/fcfff/tct/pct/tt0/td2/th1/ts1/tb4" frameborder="0" width="267" height="48" allowTransparency="true"></iframe>
+            </div>
+        </main>
 
-
-    <footer>
-        <address>
-            &copy; 2019 Chêne Gaëtan<br>
-        </address>
-    </footer>
-</div>
-
+        <footer>
+            <address>
+                &copy; 2019 Chêne Gaëtan<br>
+            </address>
+        </footer>
+    </div>
 </body>
 </html>
