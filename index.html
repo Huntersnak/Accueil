@@ -6,38 +6,47 @@
     <title>Accueil</title>
     <meta name="author" content="Gaëtan Chêne">
     <meta name="description" content="Page D'Accueil"/>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="images/fivicon.ico" href="images/favicon.jpg" sizes="16x16">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="favicon" href="images/favicon.png" sizes="16x16">
 </head>
 
 <body>
     <header>
-        <h1>Acceuil</h1>
+        <h1>Bienvenue Gaëtan</h1>
         <hr>
-        <!--nav>
+
+        <nav class="menu">
             <ul>
-                <li>
-                    <a href="">Atelier</a>
+                <li class="deroulant"><a href="#">HTML - CSS</a>
+                    <ul class="sous">
+                        <li><a href="https://validator.w3.org/">W3C Valid. HTML</a></li>
+                        <li><a href="https://coolors.co/">Coolors</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="">EPT</a>
+                <li class="deroulant"><a href="#">EPT</a>
+                    <ul class="sous">
+                        <li><a href="https://mijn.schooltas.net/#Bienvenue">ECG - Scooltas</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="">Modules</a>
+                <li class="deroulant"><a href="#">Modules</a>
+                    <ul class="sous">
+                        <li><a href="https://moodle.divtec.ch/course/view.php?id=6">101 - Moodle</a></li>
+                        <li><a href="https://coggle.it/">431 - coggle</a></li>
+                    </ul>
                 </li>
             </ul>
-        </nav-->
+        </nav>
     </header>
 
     <div class="wrapper">
         <main class="page-accueil">
-            <h2>Bienvenue Gaëtan</h2>
-            <form method="get" action="https://google.com/search" _lpcheked="1">
-                <label>
-                    <input type="text" name="q" placeholder="Rechercher sur Google" autofocus="" autocomplete="off">
-                </label>
-            </form>
+            <div class="search">
+                <form method="get" action="https://google.com/search" _lpcheked="1">
+                    <label>
+                        <input type="text" name="q" placeholder="Rechercher sur Google" autofocus="" autocomplete="off">
+                    </label>
+                </form>
+            </div>
             <div class="divtec">
                 <a class="first" href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">
                     <img src="images/logo-sharepoint.png" alt="Acceuil Sharepoint">
@@ -55,6 +64,9 @@
                 </a>
                 <a href="https://www.netflix.com/browse">
                     <img src="images/logo-netflix.png" alt="Netflix">
+                </a>
+                <a href="https://www.twitch.tv/">
+                    <img src="images/logo-twitch.png" alt="Twitch">
                 </a>
             </div>
             <div class="time">
