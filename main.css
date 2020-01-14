@@ -10,24 +10,20 @@
 
 html {
     font-family: 'Changa', sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
     color: white;
+    height: 100%;
 }
 
 body {
     margin: 0;
-    background-color: #171717;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
 }
 
 h1 {
     font-family: 'Changa One', cursive;
     font-size: 3em;
-    padding-bottom: 20px;
 }
 
 a {
@@ -40,8 +36,19 @@ a:hover {
     text-decoration: underline;
 }
 
-.wrapper {
-    margin: 1% 5%;
+.background {
+    background-image: url("images/image-fond.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.transparence {
+    background-color: rgba(0,0,0,0.55);
+    height: 100%;
 }
 
 
@@ -49,9 +56,10 @@ a:hover {
                                                 EN-TÊTE
  ********************************************************************************************************/
 header {
-    padding: 20px;
+    padding: 20px 20px 0;
     text-align: center;
     background-color: black;
+    border-bottom: 1px solid white;
 }
 
 header h1 {
@@ -61,8 +69,8 @@ header h1 {
 
 header hr {
     border-top: 5px solid white;
-    width: 40%;
-    margin: 10px auto 5px auto;
+    width: 41%;
+    margin: 15px auto 10px auto;
     padding: 0;
 }
 
@@ -93,92 +101,158 @@ footer {
     background-color: black;
     text-align: center;
     padding: 20px 0;
+    border-top: 1px solid white;
 }
 
 
 /*********************************************************************************************************
                                                    Menu
  ********************************************************************************************************/
-header nav {
-    width: 100%;
+ul#menu-horizontal {
     margin: 0 auto;
-    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    width: 100%;
     position: sticky;
-    top: 0;
-}
-
-header nav ul {
     list-style-type: none;
 }
 
-header nav ul::after {
+ul {
+    background-color: black;
+}
+
+ul#menu-vertical .sous-vertical {
+    left: 148px;
+}
+
+ul#menu-horizontal::after {
     content: "";
     display: table;
     clear: both;
 }
 
-header nav ul li {
-    width: 15%;
+ul#menu-horizontal li {
+    display: inline-block;
+    width: 150px;
     text-align: center;
     position: relative;
 }
 
-nav > ul li:hover .sous {
+ul#menu-horizontal li ul#menu-vertical li ul.sous-vertical {
+    width: 200px;
+}
+
+ul#menu-horizontal li:hover ul.sous {
     display: block;
 }
 
-header nav a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 5px 0;
+ul#menu-horizontal ul#menu-vertical.sous li:hover .sous-vertical {
+    display: inline-block;
 }
 
-header nav a:hover {
-    color: white;
+ul#menu-horizontal a {
+    width: 100%;
+    display: inline-block;
+    font-weight: 700;
     text-decoration: none;
 }
 
-.sous {
+ul#menu-horizontal a:hover {
+    color: #80e5ed;
+    text-decoration: none;
+}
+
+ul#menu-horizontal .sous,
+ul#menu-vertical .sous-vertical {
     display: none;
-    box-shadow: 0 1px 2px #CCC;
-    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+}
+
+ul#menu-horizontal .sous:hover  {
+    display: none;
     position: absolute;
     width: 100%;
     z-index: 1000;
 }
 
-.sous li {
+ul#menu-horizontal .sous-vertical:hover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul#menu-horizontal .sous li,
+ul#menu-horizontal .sous-vertical li {
     float: none;
     width: 100%;
     text-align: center;
 }
 
-.sous ul {
+ul#menu-horizontal .sous a {
     width: 100%;
+    padding: 5px;
 }
 
-.sous a {
-    width: 100%;
-    padding: 10px;
-    border-bottom: none;
-}
-
-.sous a:hover {
+ul#menu-horizontal .sous a:hover {
     color: #80e5ed;
-    text-decoration: underline;
-    border-bottom: none;
     background-color: #171717;
+    text-decoration: underline;
 }
 
-.deroulant > a::after {
+ul#menu-horizontal li > a::before {
+    content: "▼ ";
+    font-size: 12px;
+}
+
+ul#menu-horizontal li > a::after {
     content: " ▼";
     font-size: 12px;
 }
 
-.deroulant > a::before {
-    content: "▼ ";
+ul#menu-horizontal li ul#menu-vertical.sous li > a::after {
+    content: " ►";
     font-size: 12px;
+}
+
+ul#menu-horizontal li ul.sous li > a::before,
+ul#menu-horizontal li ul.sous li > a::after,
+ul#menu-horizontal li ul#menu-vertical.sous .sous-vertical li > a::after {
+    content: none;
+}
+/************Bordure************/
+
+ul#menu-horizontal .sous li {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+ul#menu-horizontal #vertical li:hover {
+    border-right: none;
+}
+
+ul#menu-horizontal #vertical .sous-vertical li:hover {
+    border-right: 1px solid white;
+}
+
+ul#menu-vertical li ul.sous-vertical li.first {
+    border-left: none;
+}
+
+ul#menu-horizontal li ul.sous li.first {
+    border-top: 1px solid white;
+}
+
+ul#menu-horizontal li ul.sous li.last {
+    border-bottom: 1px solid white;
+}
+
+ul#menu-horizontal li#firstlast {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 
@@ -227,6 +301,7 @@ main.page-accueil div.perso a.first {
 
 main.page-accueil div.divtec a img,
 main.page-accueil div.perso a img {
+    padding: -5px;
     width: 60px;
     height: 60px;
     border: 3px solid black;

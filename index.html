@@ -11,88 +11,117 @@
 </head>
 
 <body>
-    <header>
-        <h1>Bienvenue Gaëtan</h1>
-        <hr>
+    <div class="background">
+        <div class="transparence">
+            <header>
+                <h1>Bienvenue Gaëtan</h1>
+                <hr>
 
-        <nav class="menu">
-            <ul>
-                <li class="deroulant"><a href="#">EPT</a>
-                    <ul class="sous">
-                        <li><a href="https://mijn.schooltas.net/#Bienvenue">ECG - Scooltas</a></li>
-                        <li><a href="https://quizlet.com/latest">ANG - Quizlet</a>
+                <nav>
+                    <ul id="menu-horizontal">
+                        <li id="vertical"><a href="#">Atelier</a>
+                            <ul id="menu-vertical" class="sous">
+                                <li><a href="#">Arduino</a>
+                                    <ul class="sous-vertical">
+                                        <li class="first" id="firstlast"><a href="https://divtec.gitbook.io/arduino/exercices/feux-tricolores">Arduino - GitBook</a></li>
+                                    </ul>
+                                </li>
+                                <li class="last"><a href="#">HTML - CSS</a>
+                                    <ul class="sous-vertical">
+                                        <li class="first"><a href="https://validator.w3.org/">W3C Valid. HTML</a></li>
+                                        <li><a href="https://coolors.co/">Coolors</a></li>
+                                        <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast</a></li>
+                                        <li class="last"><a href="https://manager.infomaniak.com/v3/46629/hosting-web/336342/dashboard">Infomaniak</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">EPT</a>
+                            <ul class="sous">
+                                <li><a href="https://mijn.schooltas.net/#Bienvenue">ECG - Scooltas</a></li>
+                                <li class="last"><a href="https://quizlet.com/latest">ANG - Quizlet</a>
+                            </ul>
+                        </li>
+                        <li><a href="#">Modules</a>
+                            <ul class="sous">
+                                <li><a href="https://moodle.divtec.ch/course/view.php?id=6">101 - Moodle</a></li>
+                                <li class="last"><a href="https://coggle.it/">431 - coggle</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li class="deroulant"><a href="#">Modules</a>
-                    <ul class="sous">
-                        <li><a href="https://moodle.divtec.ch/course/view.php?id=6">101 - Moodle</a></li>
-                        <li><a href="https://coggle.it/">431 - coggle</a></li>
-                    </ul>
-                </li>
-                <li class="deroulant"><a href="#">HTML - CSS</a>
-                    <ul class="sous">
-                        <li><a href="https://validator.w3.org/">W3C Valid. HTML</a></li>
-                        <li><a href="https://coolors.co/">Coolors</a></li>
-                        <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                </nav>
+            </header>
 
-    <div class="wrapper">
-        <main class="page-accueil">
-            <div class="search">
-                <form method="get" action="https://google.com/search" _lpcheked="1">
-                    <label>
-                        <input type="text" name="q" placeholder="Rechercher sur Google" autofocus="" autocomplete="off">
-                    </label>
-                </form>
-            </div>
-            <div class="divtec">
-                <a class="first" href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">
-                    <img src="images/logo-sharepoint.png" alt="Acceuil Sharepoint">
-                </a>
-                <a href="https://divtec.sharepoint.com/aif/SitePages/Accueil.aspx">
-                    <img src="images/logo-sharepoint-aif.png" alt="Acceuil Sharepoint Informatique">
-                </a>
-                <a href="https://planning.divtec.ch/ept-mpt/etudiant?service=https://planning.divtec.ch/ept-mpt/&identifiant=gngYsNgpbHKX55Vx">
-                    <img src="images/logo-hyperplanning.png" alt="Hyperplanning">
-                </a>
-                <a href="https://divtec.gitbook.io/arduino/exercices/feux-tricolores">
-                    <img src="images/logo-gitbook.png" alt="GitBook">
-                </a>
-            </div>
-            <div class="perso">
-                <a class="first" href="https://www.youtube.com/?hl=fr&gl=CH">
-                    <img src="images/logo-youtube.png" alt="Youtube">
-                </a>
-                <a href="https://www.netflix.com/browse">
-                    <img src="images/logo-netflix.png" alt="Netflix">
-                </a>
-                <a href="https://www.twitch.tv/">
-                    <img src="images/logo-twitch.png" alt="Twitch">
-                </a>
-                <a href="https://github.com/Huntersnak/Accueil" alt="GitHub">
-                    <img src="images/logo-github.png">
-                </a>
-            </div>
-            <div class="time">
-                <iframe class="time"
-                        src="https://freesecure.timeanddate.com/clock/i72138cw/n2068/tlch2/fs20/fcfff/tct/pct/tt0/td2/th1/ts1/tb4">
-                </iframe>
-            </div>
-            <div class="weather">
-                <div id="TT_FftALhtxYYc9as2U3bzk1kk119a111zlmLDbjrzlul3">Météo - Tutiempo.net</div>
-                <script type="text/javascript" src="https://fr.tutiempo.net/s-widget/l_FftALhtxYYc9as2U3bzk1kk119a111zlmLDbjrzlul3"></script>
-            </div>
-        </main>
 
-        <footer>
-            <address>
-                &copy; 2019 Chêne Gaëtan<br>
-            </address>
-        </footer>
+            <main class="page-accueil">
+                <div class="search">
+                    <form action="https://google.com/search" method="get">
+                        <label>
+                            <input type="text" name="q" placeholder="Rechercher sur Google" autofocus="" autocomplete="off">
+                        </label>
+                    </form>
+                </div>
+
+                <div class="divtec">
+                    <a class="first" href="https://divtec.sharepoint.com/SitePages/Accueil.aspx">
+                        <abbr title="Accueil Sharepoint">
+                        <img src="images/logo-sharepoint.png" alt="Acceuil Sharepoint">
+                        </abbr>
+                    </a>
+                    <a href="https://divtec.sharepoint.com/aif/SitePages/Accueil.aspx">
+                        <abbr title="Sharepoint Informatique">
+                        <img src="images/logo-sharepoint-aif.png" alt="Acceuil Sharepoint Informatique">
+                        </abbr>
+                    </a>
+                    <a href="https://planning.divtec.ch/ept-mpt/etudiant?service=https://planning.divtec.ch/ept-mpt/&identifiant=gngYsNgpbHKX55Vx">
+                        <abbr title="Hyperplanning">
+                        <img src="images/logo-hyperplanning.png" alt="Hyperplanning">
+                        </abbr>
+                    </a>
+                </div>
+
+                <div class="perso">
+                    <a class="first" href="https://www.youtube.com/?hl=fr&gl=CH">
+                        <abbr title="Youtube">
+                        <img src="images/logo-youtube.png" alt="Youtube">
+                        </abbr>
+                    </a>
+                    <a href="https://www.netflix.com/browse">
+                        <abbr title="Netflix">
+                        <img src="images/logo-netflix.png" alt="Netflix">
+                        </abbr>
+                    </a>
+                    <a href="https://www.twitch.tv/">
+                        <abbr title="Twitch">
+                        <img src="images/logo-twitch.png" alt="Twitch">
+                        </abbr>
+                    </a>
+                    <a href="https://github.com/Huntersnak/Accueil">
+                        <abbr title="GitHub">
+                        <img src="images/logo-github.png" alt="GitHub">
+                        </abbr>
+                    </a>
+                </div>
+
+                <div class="time">
+                    <iframe class="time"
+                            src="https://freesecure.timeanddate.com/clock/i72138cw/n2068/tlch2/fs20/fcfff/tct/pct/tt0/td2/th1/ts1/tb4">
+                    </iframe>
+                </div>
+
+                <div class="weather">
+                    <div id="TT_FftALhtxYYc9as2U3bzk1kk119a111zlmLDbjrzlul3">Météo - Tutiempo.net</div>
+                    <script type="text/javascript" src="https://fr.tutiempo.net/s-widget/l_FftALhtxYYc9as2U3bzk1kk119a111zlmLDbjrzlul3"></script>
+                </div>
+            </main>
+
+
+            <footer>
+                <address>
+                    &copy; 2019 Chêne Gaëtan<br>
+                </address>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
